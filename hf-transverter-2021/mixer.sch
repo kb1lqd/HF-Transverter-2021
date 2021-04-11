@@ -14,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L kb1lqd-rfic:SA612AD_01,118 U?
+L hf-transverter-2021-rescue:SA612AD_01,118-kb1lqd-rfic U?
 U 1 1 6073A178
 P 5125 4475
+AR Path="/6073A178" Ref="U?"  Part="1" 
+AR Path="/607273BC/6073A178" Ref="U?"  Part="1" 
 F 0 "U?" H 6062 5730 50  0000 C CNN
 F 1 "SA612AD_01,118" H 6062 5639 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6062 5548 50  0000 C CNN
@@ -89,8 +91,6 @@ Wire Wire Line
 	4800 2550 4400 2550
 Wire Wire Line
 	4800 3000 4800 3075
-Wire Wire Line
-	5475 4425 5375 4425
 Wire Wire Line
 	5375 4425 5375 4600
 $Comp
@@ -328,4 +328,24 @@ Wire Wire Line
 	8925 3900 8925 4025
 Wire Wire Line
 	8075 3900 8925 3900
+$Comp
+L KB1LQD-RFIC:SA612AD_01,118 U?
+U 1 1 6072A469
+P 5125 4475
+F 0 "U?" H 6062 5730 50  0000 C CNN
+F 1 "SA612AD_01,118" H 6062 5639 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6062 5548 50  0000 C CNN
+F 3 "" H 5125 4475 50  0001 C CNN
+	1    5125 4475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5475 3725
+Connection ~ 5475 3900
+Connection ~ 6650 3725
+Connection ~ 6650 3900
+Connection ~ 5475 4250
+Connection ~ 5475 3550
+Wire Wire Line
+	5375 4425 5475 4425
+Connection ~ 5475 4425
 $EndSCHEMATC
