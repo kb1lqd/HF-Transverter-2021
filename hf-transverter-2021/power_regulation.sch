@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317_TO-252 U?
+U 1 1 6072B590
+P 5050 2550
+F 0 "U?" H 5050 2792 50  0000 C CNN
+F 1 "LM317_TO-252" H 5050 2701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5050 2800 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs774n/snvs774n.pdf" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60730616
+P 6550 2950
+F 0 "C?" H 6665 2996 50  0000 L CNN
+F 1 "4.7uF" H 6665 2905 50  0000 L CNN
+F 2 "" H 6588 2800 50  0001 C CNN
+F 3 "~" H 6550 2950 50  0001 C CNN
+	1    6550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60730C0F
+P 3850 2975
+F 0 "C?" H 3965 3021 50  0000 L CNN
+F 1 "0.47uF" H 3965 2930 50  0000 L CNN
+F 2 "" H 3888 2825 50  0001 C CNN
+F 3 "~" H 3850 2975 50  0001 C CNN
+	1    3850 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607311FC
+P 5825 3350
+F 0 "C?" H 5940 3396 50  0000 L CNN
+F 1 "4.7uF" H 5940 3305 50  0000 L CNN
+F 2 "" H 5863 3200 50  0001 C CNN
+F 3 "~" H 5825 3350 50  0001 C CNN
+	1    5825 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60731F1A
+P 5350 3350
+F 0 "R?" H 5418 3396 50  0000 L CNN
+F 1 "680" H 5418 3305 50  0000 L CNN
+F 2 "" V 5390 3340 50  0001 C CNN
+F 3 "~" H 5350 3350 50  0001 C CNN
+	1    5350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60732693
+P 5825 2875
+F 0 "R?" H 5893 2921 50  0000 L CNN
+F 1 "240" H 5893 2830 50  0000 L CNN
+F 2 "" V 5865 2865 50  0001 C CNN
+F 3 "~" H 5825 2875 50  0001 C CNN
+	1    5825 2875
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 2550 0    50   Input ~ 0
+PWR_INPUT
+Wire Wire Line
+	4750 2550 3850 2550
+Wire Wire Line
+	3850 2825 3850 2550
+Connection ~ 3850 2550
+Wire Wire Line
+	3850 2550 3100 2550
+Wire Wire Line
+	5825 2725 5825 2550
+Wire Wire Line
+	5350 2550 5825 2550
+Connection ~ 5825 2550
+Wire Wire Line
+	5825 2550 6550 2550
+Wire Wire Line
+	6550 2800 6550 2550
+Connection ~ 6550 2550
+Wire Wire Line
+	6550 2550 7325 2550
+Wire Wire Line
+	5825 3025 5825 3100
+Wire Wire Line
+	5825 3100 5350 3100
+Wire Wire Line
+	5350 3100 5350 3200
+Wire Wire Line
+	5825 3100 5825 3200
+Connection ~ 5825 3100
+Wire Wire Line
+	5350 3500 5350 3725
+Wire Wire Line
+	5050 2850 5050 3100
+Wire Wire Line
+	5050 3100 5350 3100
+Connection ~ 5350 3100
+Wire Wire Line
+	6550 3100 6550 3725
+Wire Wire Line
+	3850 3125 3850 3725
+Wire Wire Line
+	5825 3500 5825 3725
+$Comp
+L power:GND #PWR?
+U 1 1 6073706C
+P 3850 3725
+F 0 "#PWR?" H 3850 3475 50  0001 C CNN
+F 1 "GND" H 3855 3552 50  0000 C CNN
+F 2 "" H 3850 3725 50  0001 C CNN
+F 3 "" H 3850 3725 50  0001 C CNN
+	1    3850 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607373FB
+P 5350 3725
+F 0 "#PWR?" H 5350 3475 50  0001 C CNN
+F 1 "GND" H 5355 3552 50  0000 C CNN
+F 2 "" H 5350 3725 50  0001 C CNN
+F 3 "" H 5350 3725 50  0001 C CNN
+	1    5350 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607377D0
+P 5825 3725
+F 0 "#PWR?" H 5825 3475 50  0001 C CNN
+F 1 "GND" H 5830 3552 50  0000 C CNN
+F 2 "" H 5825 3725 50  0001 C CNN
+F 3 "" H 5825 3725 50  0001 C CNN
+	1    5825 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60737A26
+P 6550 3725
+F 0 "#PWR?" H 6550 3475 50  0001 C CNN
+F 1 "GND" H 6555 3552 50  0000 C CNN
+F 2 "" H 6550 3725 50  0001 C CNN
+F 3 "" H 6550 3725 50  0001 C CNN
+	1    6550 3725
+	1    0    0    -1  
+$EndComp
+Text HLabel 7325 2550 2    50   Input ~ 0
+P5V0
+$EndSCHEMATC
