@@ -76,4 +76,8 @@ Wire Wire Line
 	5450 3825 5950 3825
 Wire Wire Line
 	7200 3675 8325 3675
+Text Notes 1250 3775 0    50   Italic 0
+ADD SMA CONNECTOR
+Text Notes 9800 3700 0    50   Italic 0
+ADD SMA CONNECTOR
 $EndSCHEMATC

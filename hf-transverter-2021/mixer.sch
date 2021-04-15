@@ -339,13 +339,6 @@ F 3 "" H 5125 4475 50  0001 C CNN
 	1    5125 4475
 	1    0    0    -1  
 $EndComp
-Connection ~ 5475 3725
-Connection ~ 5475 3900
-Connection ~ 6650 3725
-Connection ~ 6650 3900
-Connection ~ 5475 4250
-Connection ~ 5475 3550
 Wire Wire Line
 	5375 4425 5475 4425
-Connection ~ 5475 4425
 $EndSCHEMATC
